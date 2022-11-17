@@ -1,0 +1,6 @@
+python3>=3.9.2
+python3-pip>=20.3.4
+apache2-bin>=2.4.16
+flask>=1.1.2
+Werkzeug>=1.0.1
+libapche2-mod-wsgi-py3>=4.5.11-1
