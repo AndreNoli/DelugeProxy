@@ -23,7 +23,7 @@ Well-formed requests and those deemed "*malicious*" are logged in the *`logs/acc
 
 For the configuration, it is necessary to expose it as a service on the same port as the web application, that you want to protect, to replace it for external users. Then change that of the web application to another port (*specifying to listen only locally*).
 
-## An example of Apache2 configuration in an operating system based on the Linux kernel
+### An example of Apache2 configuration in an operating system based on the Linux kernel
 
 #### **`/etc/apache2/site-enables/000-default.conf`**
 
