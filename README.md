@@ -16,10 +16,10 @@ Once configured on a web application, for each incoming request, **DelugeProxy**
 
 This behavior is very similar to the general approach of WAFs (Web Application Firewalls). The difference is that, instead of blocking "malicious" requests, **DelugeProxy** responds with pages containing trap data, that aim to fool automated security analysis tools.
 
-Well-formed requests and those deemed "*malicious*" are logged in the *`logs/access.log`* and *`log/malicious.log`* files, respectively.
+Well-formed requests and those deemed "*malicious*" are logged in the *`logs/access.log`* and *`logs/malicious.log`* files, respectively.
 
 # Configuration
-DelugeProxy configuration is done server-side.
+**DelugeProxy** configuration is done server-side.
 
 For the configuration, it is necessary to expose it as a service on the same port as the web application, that you want to protect, to replace it for external users. Then change that of the web application to another port (*specifying to listen only locally*).
 
