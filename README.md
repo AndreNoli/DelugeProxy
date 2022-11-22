@@ -12,7 +12,7 @@ The web vulnerabilities covered by **DelugeProxy** are:
 
 Once configured on a web application, for each incoming request, **DelugeProxy** will perform a security check on each parameter of the request before redirecting it to the web application. These checks are performed using **RegEx** (specified in  *`traps/payloads.json`*) specially defined to catch many of the most common web attacks. Using these RegEx, **DelugeProxy** can distinguish requests that could be malicious from safe ones.
 
-![ProxyState](https://user-images.githubusercontent.com/50990652/202558751-bb33d844-fe8d-4caf-8230-ac76c75a9f3f.PNG)
+![Steps_Proxy](https://user-images.githubusercontent.com/50990652/202847321-faba10d8-1593-4234-8a90-0adc0e510422.jpeg)
 
 This behavior is very similar to the general approach of WAFs (Web Application Firewalls). The difference is that, instead of blocking malicious requests, **DelugeProxy** responds with pages containing trap data, that aim to fool automated security analysis tools.
 
@@ -20,7 +20,7 @@ All requests are logged.
 Good requests in *`log/access.log`* and evil request in *`log/malicious.log`*.
 
 # Configuration
-DelugeProxy configuration is done server-side.
+**DelugeProxy** configuration is done server-side.
 
 It is necessary to expose DelugeProxy as a service on the same of the web application.
 Then the web application is moved to another port (*specifying to listen only locally*).
