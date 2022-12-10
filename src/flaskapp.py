@@ -27,7 +27,7 @@ ACCESS_LOG = '/var/www/flaskapp/log/access.log'
 TRAPS_LOG = '/var/www/flaskapp/log/traps.log'
 
 # Reverse Proxy Address
-proxyaddress = 'http://192.168.75.141'
+proxyaddress = '*INSERT-YOUR-LOCAL-ADDRESS'
 
 # Reverse Proxy Domain
 proxydomain = 'http://application.protected'
